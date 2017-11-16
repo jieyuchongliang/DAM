@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.chenghuan.com.dam">
+
+    <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 写入sdcard -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.InfoGatherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar" />
+        <activity
+            android:name=".activity.DetailShowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar" />
+        <activity
+            android:name=".activity.EveryDuctActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar" />
+        <activity
+            android:name=".activity.GatherInfoActivity"
+            android:label="@string/title_activity_bottom_bar"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar" />
+        <activity
+            android:name=".activity.CustomScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InspectionLotActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="info.chenghuan.com.dam"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

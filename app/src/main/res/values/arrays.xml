@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="state">
+        <item>正常</item>
+        <item>错台</item>
+        <item>渗漏</item>
+        <item>破损</item>
+        <item>开裂</item>
+        <item>已修复</item>
+    </string-array>
+</resources>

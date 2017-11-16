@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    tools:context="info.chenghuan.com.dam.activity.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#6A7D8F"
+        android:gravity="center"
+        android:text="清华园隧道盾构拼装采集系统"
+        android:textColor="@color/textWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#55ffffff"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_login_input">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:digits="@string/alphabet_and_number"
+                android:hint="请输入用户名"
+                android:padding="16dp"
+                android:text="jzzhangyao" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_login_input">
+
+            <com.chaychan.viewlib.PowerfulEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:digits="@string/alphabet_and_number"
+                android:hint="请输入密码"
+                android:padding="16dp"
+                android:text="111111"
+                app:funcType="canClear" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_password"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_btn_select"
+            android:text="登陆"
+            android:textColor="@color/textWhite" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textBlack" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#55ffffff"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="©2017  中国铁道科学研究院"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

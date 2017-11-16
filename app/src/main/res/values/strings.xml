@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">管片拼装</string>
+    <string name="title_activity_bottom_bar">BottomBarActivity</string>
+    <string name="title_home">采集</string>
+    <string name="title_dashboard">一览</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="ringNum">成隧环号：</string>
+    <string name="belongMile">所在里程：DK</string>
+    <string name="belongMile2">所在里程：</string>
+    <string name="installDate">拼装日期：</string>
+    <string name="synGrouting">同步注浆：</string>
+    <string name="secondGrouting">补&#160;&#160;注&#160;&#160;浆：</string>
+    <string name="groutingNum">注浆量</string>
+    <string name="groutingPressure">注浆压力</string>
+    <string name="appearanceCheck">外观检查：</string>
+    <string name="workMeasure">施工测量：</string>
+    <string name="outFactoryNum">出厂编号：</string>
+    <string name="projectName">工程名称：</string>
+    <string name="lineName">线路名称：</string>
+    <string name="workUnit">施工单位：</string>
+    <string name="ringInfoGather">成环信息采集</string>
+    <string name="synInfo">数据同步</string>
+    <string name="groutingInfo">注浆信息</string>
+    <string name="ringInfo">成环信息</string>
+    <string name="qualityInfo">质量信息</string>
+    <string name="projectInfo">工程信息</string>
+    <string name="save">保存</string>
+    <string name="shieldNumber">盾  构  号：</string>
+    <string name="synShieldData">同步盾构机数据</string>
+    <string name="checkPi">检&#160;&#160;验&#160;&#160;批：</string>
+    <string name="everyDuct">各&#160;&#160;管&#160;&#160;片：</string>
+</resources>

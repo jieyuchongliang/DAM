@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_show_tsid_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shieldNumber"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_show_tsid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_syn_select"
+            android:padding="4dp"
+            android:text="清华园隧道盾构段-1"
+            android:textColor="@color/textWhite" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ringNum"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_data_syn_et"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <!--设置EditText默认无焦点，外加父布局中的两个属性focusable，focusableInTouchMode-->
+            <requestFocus />
+
+            <EditText
+                android:id="@+id/et_ring_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_syn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_btn_syn_select"
+            android:elevation="4dp"
+            android:padding="4dp"
+            android:text="@string/synShieldData"
+            android:textColor="@color/textWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/belongMile2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_gather_mileage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/installDate"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_gather_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
